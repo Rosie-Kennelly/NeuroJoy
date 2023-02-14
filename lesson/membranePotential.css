@@ -1,0 +1,231 @@
+ h1{
+    font-size: 630%;
+     margin-right: 11%;
+ }
+
+.title{
+  margin-top: -3%;
+  margin-bottom: 2%;
+}
+
+.nextPrevContainer{
+    width: 36vw;
+   margin:auto;
+    margin-top: 4%;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: flex-end;
+  justify-self: center;
+}
+
+
+
+
+
+/* start of styling for the slider */
+
+/* Slider container for how neurons interact */
+.slideshow-container {
+    height: 36vw;
+    width: 76vw;
+    margin: auto;
+    margin-top: 5.6%;
+  margin-bottom: 4%;
+    background: #edc0b2;
+    border-radius: 2em;
+    overflow: hidden;
+    position:relative;
+    flex-flow:row wrap;
+    display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    position: absolute;
+    display:inline-flex	;
+    overflow: auto;
+    white-space: nowrap;
+    margin:3%;
+    margin-top: 13%; 
+    z-index:3;
+    font-size:420%;
+    color: #d9795b;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+}
+
+/* On hover next/prev button will change colour*/
+.prev:hover, .next:hover {
+    color: #c25736;
+}
+
+/* text inside the slider */
+.text {
+    display: flex;
+    text-align: inherit;
+    margin-right: 0vw;
+    margin-left: 13vw;
+    margin-top: 12%;
+    font-size: 170%;
+  font-family:soleil;
+}
+
+/* image inside the slider */
+.sliderImg {
+/*     display: inline;
+    vertical-align: middle;
+    line-height: normal; */
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+    margin-right: 20%;
+    
+    margin-top:-3%;
+border-radius:  20% 30% 10% 20%;
+  /*  background-color: #e6af9e; */
+   /*  box-shadow: 0 0 180px 40px #e3a896; */
+    }
+
+
+/* container for the bar indicators */
+.dotContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom:3%;
+}
+
+/* The bar indicators */
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 11%;
+    margin:1%;
+    margin-top:4%;
+    background-color: #e8a995;
+    border-radius: 2em;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* sleecter bar indicator changes colour */
+/* pretty og color: c42b42, d9646c */
+.activeSlide, .dot:hover {
+    background-color: #d9795b;
+}
+
+/* END of styling for the slider DC7077#E93965*/
+
+
+/*START of styling for the electro and chemical gradient definitions  */
+
+
+ div.mainNS{
+  height: 25vw;
+  width: 80vw;;
+  padding:0px;
+  flex-flow:row wrap;
+  margin: auto;
+  margin-top:3%;
+  background: #332820;
+  border-radius: 2em;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  display: block;
+}
+
+
+.thumbnail {
+  position: absolute;
+    /* display:block; */
+/*     height: 32vw; */
+  width: 29%;
+    margin-top: 2vw;
+}
+
+#bolt{
+    position:relative;
+  float:right;
+  padding-right: 10%;
+}
+
+#chemical{
+  margin-left:10%;
+}
+
+.wide{
+  width: 80vw;
+  margin-right: 2%;
+  margin-left: 8%;
+  margin-top: 1%;
+}
+
+.channels{
+  width: 60vw;
+  margin-right: 2%;
+  margin-left: 0%;
+  margin-top: -7%;
+}
+
+#protein{
+  float:right;
+}
+
+#negative{
+  float:right;
+  width: 50vw;
+   padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 3%;
+}
+
+#sodPos{
+  float:left;
+  width: 40vw;
+  padding-left: 8%;
+  padding-right: 10%;
+  padding-bottom: 14%;
+  padding-top: 8%;
+}
+
+
+.heading {
+  padding:0%;
+  margin-right:10%;
+  margin-top: 7%;
+  margin-left: 50%;
+  margin-bottom: 0%;
+  color: #f0ded1;
+}
+
+
+
+.paragraph {
+  margin-left: 50%;
+  margin-top: 3%;
+  margin-right: 14%;
+  padding:0%;
+  color: #f0ded1;
+}
+
+#PNSHeading {
+  margin-right:50%;
+  margin-left: 10%;
+}
+
+#PNSParagraph {
+  margin-right:55%;
+  margin-left: 10%;
+}
+
+/* #PNSThumbnail{
+  position:relative;
+  float:right;
+} */
+
+/* end of styling for electro and chemical */

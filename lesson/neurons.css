@@ -1,0 +1,245 @@
+.legoImg{
+  float:right;
+/*   height: 35vw; */
+  width: 32vw;
+ 
+  margin-right:10%;
+  margin-left:9%;
+  margin-top:10%;
+  margin-bottom: 7%;
+  z-index: 10;
+  display:inline;
+}
+
+/* interactive neuron classes slider starts here */
+
+/* this is the container for the three singular classes. */
+ div.neuronClasses {
+    text-align: center;
+    margin: 11%;
+    width: 78%;
+    margin-top: 4%;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+  }
+
+/* styling for each single neuron class e6aea1  e6aea1 */
+ div.singleNeuron{
+  height: 30vw;
+  width: 24vw;
+  padding:0px;
+  flex-flow:row wrap;
+  margin: 1%; 
+  background: #e6aaa3;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.25s;
+  border-radius: 2em;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  display: block;
+   box-shadow: #e8cfbe 0px 48px 100px 0px;
+   cursor: pointer;
+}
+
+/* this makes a class stretch on hover */
+div.singleNeuron:hover {
+  width: 80vw;
+} 
+
+/* this makes the divs to the left of the interneuron shrink to nothing when a div expands */
+div#sensoryExpand{
+  flex-shrink: 160;
+}
+div#motorExpand{
+  flex-shrink: 13;
+}
+
+
+/* this makes the motor and inter divs squish and fade to nothing when you hover over the sensory div */
+    div#sensoryExpand:hover + div#motorExpand{
+    width: 0;
+    }
+    div#sensoryExpand:hover ~ div#interExpand{
+    width: 0;
+    }
+
+/* this makes the inter div squish and fade to nothing when you hover over the motor div */
+    div#motorExpand:hover + div#interExpand{
+    width: 0;
+    }
+
+
+/* styling for all 3 neuron images */
+.thumbnail {
+  position: absolute;
+    /* display:block; */
+    height: 25vw;
+    margin-top: 2vw;
+}
+
+
+.heading {
+  visibility: hidden;
+  opacity: 4%;
+  padding:0%;
+  margin-right:5%;
+  margin-top: 7%;
+  margin-left: 37.5%;
+  margin-bottom: 0%;
+  transition: all 0.7s ease-out;
+}
+
+div.singleNeuron:hover .heading {
+ visibility: visible;
+ opacity:100%;
+ transition-duration: 4s;
+  transition-delay: 1.4s
+}
+
+
+.paragraph {
+  visibility: hidden;
+  opacity: 4%;
+  margin-left: 37.5%;
+  margin-top: 3%;
+  margin-right: 10%;
+  padding:0%;
+  transition: all 0.5s ease-out;
+  height: auto;
+}
+
+div.singleNeuron:hover .paragraph {
+ visibility: visible;
+ opacity:100%;
+ transition-delay: 2.4s;
+}
+
+/* end of styling for interactive neuron classes section */
+
+/* start of styling for the slider */
+
+/* Slider container for how neurons interact */
+.slideshow-container {
+    height: 36vw;
+    width: 76vw;
+    margin: auto;
+    margin-top: 5.6%;
+    background: #edc0b2;
+    border-radius: 2em;
+    overflow: hidden;
+    position:relative;
+    flex-flow:row wrap;
+    display: block;
+    box-shadow: #e8cfbe 0px 48px 100px 0px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    position: absolute;
+    display:inline-flex	;
+    overflow: auto;
+    white-space: nowrap;
+    margin:3%;
+    margin-top: 13%; 
+    z-index:3;
+    font-size:420%;
+    color: #d9795b;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+}
+
+/* On hover next/prev button will change colour*/
+.prev:hover, .next:hover {
+    color: #c25736;
+}
+
+/* text inside the slider */
+.text {
+    display: flex;
+    text-align: inherit;
+    margin-right: 0vw;
+    margin-left: 13vw;
+    margin-top: 12%;
+    font-size: 170%;
+  font-family:soleil;
+}
+
+/* image inside the slider */
+.sliderImg {
+    display: inline;
+    vertical-align: middle;
+    line-height: normal;
+    float:right;
+    width: 30%;
+    margin-left: 8vw;
+    margin-bottom: 2%;
+    margin-right: 10vw;
+    position:static;
+    margin-top:-6.6%;
+border-radius:  20% 30% 10% 20%;
+  /*  background-color: #e6af9e; */
+   /*  box-shadow: 0 0 180px 40px #e3a896; */
+    }
+
+#cupcake{
+  border-radius:  20% 30% 10% 20%;
+}
+
+#thermometer{
+  border-radius:  20% 30% 10% 20%;
+}
+
+#spinalCord{
+  border-radius:  20% 30% 10% 20%;
+}
+
+#ouch{
+  border-radius:  20% 30% 10% 20%;
+}
+
+#hand{
+  border-radius:  20% 30% 10% 20%;
+}
+
+/* container for the bar indicators */
+.dotContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom:3%;
+}
+
+/* The bar indicators */
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 11%;
+    margin:1%;
+    margin-top:4%;
+    background-color: #e8a995;
+    border-radius: 2em;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* sleecter bar indicator changes colour */
+/* pretty og color: c42b42, d9646c */
+.activeSlide, .dot:hover {
+    background-color: #d9795b;
+}
+
+/* END of styling for the slider DC7077#E93965*/
+
+@media (max-width: 425px) {
+.legoImg{
+  float:right;
+  width: 90%;
+}

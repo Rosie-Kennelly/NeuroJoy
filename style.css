@@ -1,0 +1,136 @@
+.mainLogo{
+  height:50vw;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top:2%;
+}
+
+
+/* START of basic styling */
+
+/* very bright colors */
+/*     background: linear-gradient(to right, #D9004C, #db2127, #d94100, #db3f00,#D72626, #CF1120, #d10034,#d10046,#d90258, #D20035); */
+
+
+
+/* START of basic styling. */
+
+body {
+     background: linear-gradient(to right, #c92a42, #c93232, #c94a22, #c94e28,#c94028, #c72e3b,#c92c46,#d9364f, #d43b47);
+    background-color: #c94028;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    overflow-y: scroll;
+    overflow-block: initial;
+    color:#332820;
+}
+
+
+/* acts as a background */
+.canvas{
+    background-color: #f0ded1;
+    margin: 0%;
+    padding-bottom: 10%;
+}
+
+
+/* main font styling starts here */
+h1{
+    font-family: forma-djr-text;
+    font-style: normal;
+    font-size: 720%;
+    margin-top: 7.5%;
+    margin-bottom: 0%;
+    margin-left: 11%;
+    margin-right: 10%;
+    font-weight: 900;
+}
+
+h2{
+    font-family: forma-djr-text;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 350%;
+    margin-top: 8%;
+    margin-bottom: 3%;
+    margin-left: 11.5%;
+    margin-right: 10%;
+}
+
+h3 {
+    font-family: forma-djr-text;
+    font-style: normal;
+    font-weight: medium;
+    font-size: 275%;
+    margin-top: 4.5%;
+    margin-bottom: 0%;
+    margin-left: 18.4%;
+}
+
+h4{
+    font-family: forma-djr-text;
+    font-style: normal;
+    font-weight: medium;
+    font-size: 160%;
+    margin-top: 4.5%;
+    margin-bottom: 0%;
+    margin-left: 18.5%;
+}
+
+h5{
+    font-family: forma-djr-text;
+    font-style: normal;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 220%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 11.4%;
+}
+
+p{
+    font-size: 160%;
+    margin-left: 11.3%;
+    margin-right: 18.5%;
+  font-family:soleil;
+  font-style: normal;
+}
+
+li{
+    font-size: 150%;
+    margin-left: 16.5%;
+    margin-right: 18.5%;
+}
+
+/* main font styling ends here */
+
+
+/* nav bar background.  #c94922, #c94c16*/
+.topnav {
+   background: linear-gradient(to right, #c92a42, #c93232, #c94a22, #c94e28,#c94028, #c72e3b,#c92c46,#d9364f, #d43b47);
+    padding-top: 2.25%;
+    padding-bottom: 2.25%; 
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: left;
+}
+
+/* nav bar fonts */
+.topnav a {
+    font-size: 172%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f0ded1;
+    display: inline;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family:soleil;
+    font-weight:800;
+}
+
+/* moves lessons and quizzes to the left in the nav bar */
+#lessons, #aboutUs {
+    float: right;
+}

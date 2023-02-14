@@ -1,0 +1,240 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width">
+    <title>Neurons</title>
+    <link href="neurons.css" rel="stylesheet" type="text/css" />
+    <link href="../universal.css" rel="stylesheet" type="text/css" />
+    <!-- adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/vji1rzd.css">
+    <!-- icons from fontawesome -->
+    <script src="https://kit.fontawesome.com/fa13fb5a51.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+  
+<div class="canvas">
+  
+<!-- START of top nav bar -->
+    
+<div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="../aboutUs.html" id="aboutUs">About Us</a>
+    <a href="../lessons.html" id="lessons">Lessons</a>
+  </div>
+
+<!-- END of top nav bar -->
+
+  
+<!-- START of lesson introduction -->
+  
+<img src="../imgs/Untitled_Artwork 21.png" class="legoImg">
+  <h1>Neurons</h1>
+<!-- <h5>The Building Blocks of</h5><h5>the Nervous System</h5>
+  <br>
+  <br> -->
+    <p>Neurons are the building blocks of the nervous system! They carry electrical messages around the body. These electrical messages are also called impulses, action potentials, and nerve impulses.
+    
+    </p>
+
+  
+<!-- END of lesson introduction -->
+
+  
+<h2>Neuron Classes</h2>
+
+    <p>Brilliant! Now that we covered what a neuron is, let’s look at different types! Right now we're gonna focus on three classes—the sensory neuron, motor neuron, and interneuron
+    </p>
+
+<!-- START of interactive neuron classes-->
+
+<div class="neuronClasses">
+
+  <!-- sensory neuron div-->
+  <div class="singleNeuron" id="sensoryExpand">
+      <img src="../imgs/Untitled_Artwork 20.png "class="thumbnail" alt="Default Image">
+    
+        <h3 class="heading">Sensory Neuron</h3>
+
+        <p class="paragraph">First up we have the sensory neuron!
+        They carry messages from the sense organ to the central nervous system (CNS)</p>
+  </div>
+
+  
+  <!-- motor neuron div-->
+  <div class="singleNeuron" id="motorExpand">
+      <img src="../imgs/Untitled_Artwork 19.png"  class="thumbnail" alt="Default Image">
+    
+        <h3 class="heading">Motor Neuron</h3>
+
+        <p class="paragraph">Next we have the motor neuron. It carries impulses from the CNS to muscles and glands</p>
+  </div>
+
+  
+  <!-- interneuron div-->
+  <div class="singleNeuron" id="interExpand">
+    <img src="../imgs/interneuron.png" class="thumbnail" alt="Default Image">
+
+        <h3 class="heading">Interneuron</h3>
+
+        <p class="paragraph">Lastly, the interneuron. It is only found in the CNS and they are the most numerous class of neurons. It’s job is to connect one neuron to another within the CNS.</p>
+  </div>
+</div>
+
+<!--   END of interactive neuron classes -->
+
+  <h2>How Neurons Work Together</h2>
+  
+<p>Okay so let’s walk through a scenario to better visualise how these neurons interact with each other.</p>
+
+
+  <!-- start of slider about neuron interaction -->
+ <div class="slideshow-container">
+
+<!-- these are the bar indicators at the top of the slider -->
+<div class="dotContainer"style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<!-- next and previous arrows for slider &#10095 >&#10094 -->
+<a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+<a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+
+<!-- start of slide content -->
+<div class="mySlides fade">
+    <img src="../imgs/cupcake.png" class="sliderImg" id="cupcake">
+  
+    <div class="text">Imagine you are taking cupcakes out of their tin and you burn your hand</div>
+</div>
+
+   
+<div class="mySlides fade">
+      <img src="../imgs/thermometer.png" class="sliderImg" id="thermometer">
+      <div class="text">The sensory neuron detects that the oven is a really high temperature and sends this info the the CNS</div>
+</div>
+
+   
+<div class="mySlides fade">
+      <img src="../imgs/Untitled_Artwork 1212.png"  class="sliderImg" id="spinalCord">
+      <div class="text">The signal would travel to interneurons in your spinal cord</div>
+</div>
+
+<div class="mySlides fade">
+      <img src="../imgs/hand.png"  class="sliderImg" id="hand">
+      <div class="text">Some interneurons would signal to your motor neurons, this results in you pulling your hand away from the hot tin</div>
+</div>
+
+<div class="mySlides fade">
+      <img src="../imgs/ow.png"  class="sliderImg" id="ow">
+      <div class="text">Other interneurons fire the signal up to neurons in your brain, where it can be perceived as pain</div>
+</div>
+   <!-- end of slide content -->
+
+ </div>
+<!-- END of slider about neuron interaction -->
+
+<!-- START of next and previous buttons -->
+<div class="nextPrevContainer">
+
+  <div class="PControlContainer">
+<a href="nervousSys.html" class="pLessonIcon"> <i class="fa-solid fa-chevron-left"></i></a>
+  <a href="nervousSys.html" class="prevText">Previous Lesson</a> 
+  </div>
+
+  <div class="NControlContainer">
+<a href="neuronAnatomy.html" class="nextText">Next Lesson</a> 
+<a href="neuronAnatomy.html" class="nLessonIcon"><i class="fa-solid fa-chevron-right"></i></a>
+  </div>
+</div>
+  <!-- END of next and previous buttons -->
+    
+<!-- START of sources accordion -->
+    
+<div class="sourcesContainer">
+
+<!-- show sources button -->
+<button data-text-swap="Hide Sources"  class="collapsible">Show Sources <i class="fa-solid fa-plus"></i></button>
+  <!-- icon for a plus next to show sources -->
+
+  
+  <!-- further classifications and their content -->
+  <div class="content">
+
+    <button class="accordion">Intro</button>
+      <div class="panel">
+
+      <a href="
+https://www.iomcworld.org/scholarly/nervous-system-journals-articles-ppts-list-4030.html" target="_blank" class="sourcesLink"><b>Journal of Neuroscience and Neuropharmacology:</b> "Neurons are the basic building blocks of the nervous system"</a>
+
+<a href="https://openstax.org/books/anatomy-and-physiology/pages/12-2-nervous-tissue" target="_blank" class="sourcesLink"><b>Anatomy and Physiology:</b> "Neurons are the cells considered to be the basis of nervous tissue. They are responsible for the electrical signals that communicate information"</a>
+        
+<a href="https://www.ncbi.nlm.nih.gov/books/NBK11053/#:~:text=Nerve%20cells%20generate%20electrical%20signals,ions%20across%20their%20plasma%20membranes." target="_blank" class="sourcesLink"><b>Neuroscience 2nd edition:</b> "Nerve cells generate electrical signals that transmit information"</a>
+     
+      <a href="https://www.khanacademy.org/science/biology/human-biology/neuron-nervous-system/a/overview-of-neuron-structure-and-function" target="_blank" class="sourcesLink"><b>Khan Academy:</b> An electrical signal is also known as "the nerve impulse, or action potential"</a>
+
+
+        
+      </div>
+
+    <button class="accordion">Neuron Classes</button>
+      <div class="panel">
+      <a href="https://www.khanacademy.org/science/biology/human-biology/neuron-nervous-system/a/overview-of-neuron-structure-and-function" target="_blank" class="sourcesLink"><b>Khan Academy:</b> Overview of the functions within each neuron class</a>
+
+      <a href="https://www.g-wonlinetextbooks.com/cdn-1493044402676/introduction-anatomy-physiology-2014/210" target="_blank" class="sourcesLink"><b>Introduction to Anatomy and Physiology:</b> Overview of the functions within each neuron class</a>
+        
+<a href="
+https://www.healthline.com/health/neurons#types" target="_blank" class="sourcesLink"><b>Healthline:</b> "[Interneurons are] the most common type of neuron"</a>
+      </div>
+
+    <button class="accordion">How Neurons Work Together</button>
+      <div class="panel">
+            <a href="https://www.khanacademy.org/science/biology/human-biology/neuron-nervous-system/a/overview-of-neuron-structure-and-function" target="_blank" class="sourcesLink"><b>Khan Academy:</b> How neurons communicate when you injure your hand (hot coal example)</a>
+
+      <a href="https://www.g-wonlinetextbooks.com/cdn-1493044402676/introduction-anatomy-physiology-2014/214" target="_blank" class="sourcesLink"><b>Introduction to Anatomy and Physiology:</b> How neurons communicate when you injure your hand (hot hob example)</a>
+
+<a href="
+https://www.healthline.com/health/neurons#types" target="_blank" class="sourcesLink"><b>Healthline:</b> How neurons communicate when you injure your hand (cactus example)</a>
+      </div>
+
+    </div>
+</div>
+    
+    <!-- END of sources accordian -->
+
+  </div>
+
+  <script src="../script.js"></script>
+  <script type="text/javascript">
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" activeSlide", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " activeSlide";
+}
+  </script>
+</body>
+</html>

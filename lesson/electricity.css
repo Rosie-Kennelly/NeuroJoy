@@ -1,0 +1,271 @@
+#atom{
+  width:48vw;
+  float: right;
+  display:inline-block;
+/*   margin-bottom:10%; */
+}
+
+#subatomic{
+  width:28vw;
+   margin-left: 11vw;
+  margin-right:11vw;
+  margin-top:-4%;
+  margin-bottom:-7%;
+  display:inline-block;
+}
+
+
+
+ div.ionInfo{
+  height: 50vw;
+  width: 33vw;
+  padding:0px;
+  margin: 4%; 
+  background: #e6aaa3;
+  overflow: hidden;
+  border-radius: 2em;
+  position: relative;
+  text-align: left;
+  display: block;
+   box-shadow: #e8cfbe 0px 48px 100px 0px;
+}
+
+
+.ionInfoContainer{
+  display:flex;
+  padding-left:7vw;
+/*   justify-content: center; */
+  
+}
+
+.ionInfo{
+  margin:auto;
+}
+
+.ion{
+  display:inline-block;
+  width: 45vw;
+  margin-top:5%;
+/*   margin-right:-3%; */
+  margin-left:6%;
+  overflow: hidden;
+}
+
+#cation{
+    margin-left:2%;
+}
+
+.heading{
+  margin-left:11%;
+}
+
+.paragraph{
+  
+}
+
+.elecPot{
+  width: 70vw;
+  margin-left:10vw;
+  margin-right:10vw;
+  margin-bottom: 3%;
+  margin-top: 1.5%;
+  border-radius: 3em;
+}
+
+.highV{
+ background-image: linear-gradient(to top, transparent, #332820 100%), url("../imgs/Untitled_Artwork 23.png");
+  background-size: cover;
+}
+
+.lowV{
+ background-image: linear-gradient(to top, transparent, #332820 100%), url("../imgs/Untitled_Artwork 22.png");
+  background-size: cover;
+}
+
+
+/* START of styling for flashcards */
+.container {
+/*   text-align: center; */
+    margin: 18%;
+    width: 84%;
+    margin-top: 4%;
+    flex-wrap: wrap;
+    display: flex;
+/*     justify-content: center; */
+}
+
+.card .pad {
+  padding: 0 15px; 
+}
+.card.flip .action {
+  display: none;
+}
+
+/* this contains the card, it does not do the flipping */
+.card {
+
+  height: 29vw;
+  width: 23vw;
+  padding-right:30px;
+  padding-left:30px;
+  flex-flow:row wrap;
+  margin-left: 0.7%;
+  margin-right:1.7%;
+  margin-top:3%;
+  position: relative;
+  text-align: left;
+  display: block;
+   cursor: pointer;
+}
+
+/* the div that contains the heading */
+.card .front {
+  z-index: 900;
+  width: inherit;
+  height: inherit;
+  background-color:#332820;
+  height: 29vw;
+  width: 23vw;
+  padding:0px;
+  flex-flow:row wrap;
+  margin: 1%;
+  border-radius: 2em;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  display: inline-block;
+   cursor: pointer;
+  
+  
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  
+  -o-transform: rotateX(0deg) rotateY(0deg);
+  -o-transform-style: preserve-3d;
+  -o-backface-visibility: hidden;
+  
+  -ms-transform: rotateX(0deg) rotateY(0deg);
+  -ms-transform-style: preserve-3d;
+  -ms-backface-visibility: hidden;
+ 
+  transform: rotateX(0deg) rotateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+
+
+.card.flip .front {
+  z-index: 900;
+  background-color:#332820;
+  overflow: hidden;
+   cursor: pointer;
+  
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  
+}
+  	
+.card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+
+  
+  -webkit-transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  
+  -moz-transform: rotateY(-180deg);
+  -moz-transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  
+  -o-transform: rotateY(-180deg);
+  -o-transform-style: preserve-3d;
+  -o-backface-visibility: hidden;
+  
+  -ms-transform: rotateY(-180deg);
+  -ms-transform-style: preserve-3d;
+  -ms-backface-visibility: hidden;
+  
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+ 
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+		
+.card.flip .back {
+  z-index: 1000;
+  
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -ms-transform: rotateX(0deg) rotateY(0deg);
+  -o-transform: rotateX(0deg) rotateY(0deg);
+  transform: rotateX(0deg) rotateY(0deg);
+  
+
+  
+  background-color:#332820;
+  
+  padding:0px;
+  flex-flow:row wrap;
+  margin: 1%;
+  border-radius: 2em;
+  overflow: hidden;
+  text-align: left;
+  display: block;
+   cursor: pointer;
+
+  height: 29vw;
+  width: 23vw;
+}
+
+.frontTitle {
+  padding-top:10%;
+  padding-left:12%;
+  text-align:left;
+  font-size:210%;
+  color: #f0ded1;
+  height:45px;
+  font-weight:bold;
+  font-family: forma-djr-text;
+}
+
+.frontLogo {
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.vDefinition{
+  margin-top:12%;
+  margin-left:12%;
+  margin-right:12%;
+  color: #f0ded1;
+}
+
+/* f0ded1 */

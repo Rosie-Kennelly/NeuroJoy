@@ -1,0 +1,278 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width">
+    <title>Membrane Potential</title>
+    <link href="../universal.css" rel="stylesheet" type="text/css" />
+    <link href="membranePotential.css" rel="stylesheet" type="text/css" />
+    <!-- adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/vji1rzd.css">
+    <!-- icons from fontawesome -->
+    <script src="https://kit.fontawesome.com/fa13fb5a51.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+  
+<div class="canvas">
+  
+<!-- START of top nav bar -->
+    
+<div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="../aboutUs.html" id="aboutUs">About Us</a>
+    <a href="../lessons.html" id="lessons">Lessons</a>
+  </div>
+
+<!-- END of top nav bar -->
+
+<h1>Membrane</h1>
+<h1 class="title">Potential</h1>
+
+<p>Okay, now we’re gonna go more in depth about the role the cell membrane plays in maintaining a negative charge within the neuron.</p>
+
+<h2>Balance</h2>
+
+<p>Something that you need to know is that nature HATES it when there’s not balance. The body will always try and reach an equilibrium.
+
+Between the cell membrane there is a difference in energy and concentration of chemicals. As a result we get an <b>electrochemical gradient!</b></p>
+
+
+  <div class="mainNS" id="PNS">
+<img src="../imgs/Untitled_Artwork 5.png" class="thumbnail" id="bolt">
+    
+        <h3 class="heading" id="PNSHeading">Electrical gradient</h3>
+
+        <p class="paragraph" id="PNSParagraph">Difference in charge across a membrane</p>
+
+  </div>
+
+  
+
+<div class="mainNS" id="CNS">
+      <img src="../imgs/Untitled_Artwork 4.png" class="thumbnail" id="chemical" alt="Default Image">
+    
+        <h3 class="heading">Chemical gradient</h3>
+
+        <p class="paragraph">Difference in particle concentration across a membrane</p>
+  </div>
+  
+
+<h2>Ions in the membrane</h2>
+<p>There are more sodium cations outside the cell than inside.
+There are more postassium cations inside the cell than outside
+There is large negatively charged proteins inside the cell
+The other anions found both inside and outside the cell don’t make a significant difference.</p>
+
+<img src="../imgs/diagram5.png" class="wide">
+  
+<h2>Channel proteins</h2>
+  <img src="../imgs/Untitled_Artwork 14.png" class="channels" id="protein">
+<p>Embedded in the membranes are transmembrane proteins called channel proteins. Transmembrane means they span the entirety of the cell membrane. 
+Protein channels are specific (picky) and only allow certain substances to pass through them.</p> 
+<br></br>
+<img src="../imgs/diagram6.png" id="sodPos">
+  
+<p>Potassium channels only allow potassium to pass through and sodium channels only allow sodium to pass through</p>
+  
+<p>These substances move along these channels by a process called <b>difussion</b>.
+Diffusion is the the movement of subtances from an area where they are at a higher concentration to areas where they are at a lower concentration</p>
+
+<h2>Postassium channels</h2>
+<p>There tends to be more potassium inside the cell than outside. 
+The potassium channels in a membrane are leaky.
+Since the potassium can leave out the channel, it diffuses out of the cell</p>
+
+  <img src="../imgs/Untitled_Artwork 1.png" class="wide">
+  
+<p>Now positive potassium ions have left the cell. Positive and negative charges attract so negative anions want to chase after them. 
+However the prodominent anion found in the cell are the negatively charged proteins. They aren’t able to pass through the membrane because they're too chunky, so they are trapped and left behind.
+This results in a slight negative charge just inside the membrane.</p>
+
+<h2>Sodium channels</h2>
+    <img src="../imgs/diagram1.png" id="negative">
+<p>There is more sodium outside the cell. Sodium moves from an area of higher concentration to an area of lower concentration and travels inside the cell.
+<b>Sodium channels are less leaky than potassium ones</b>. This means less sodium diffuses in, compared to the amount of potassium that diffuses out.
+<b>More positive ions are leaving the cell than entering.</b> This contributes to a greater negative charge inside the cell.</p>
+
+
+
+<h2>Sodium-potassium pump</h2>
+<p>Above we just explored the main factors that contribute to a resting membrane potential of -70mV in neurons.
+However the concentration of potassium and sodium between the membrane (concentration gradient) needs to be <b>restored and maintained</b>. 
+This is done by the sodium-potassium pump (also known as a transmembrane pump or a carrier protein).</p> 
+  
+
+  
+  <!-- START of slider about the pump -->
+ <div class="slideshow-container">
+
+<!-- these are the bar indicators at the top of the slider -->
+<div class="dotContainer"style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<!-- next and previous arrows for slider &#10095 >&#10094 -->
+<a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+<a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+
+<!-- start of slide content -->
+<div class="mySlides fade">
+    <img src="../imgs/Untitled_Artwork 12.png"  class="sliderImg">
+</div>
+
+   
+<div class="mySlides fade">
+      <img src="../imgs/Untitled_Artwork 11.png"  class="sliderImg">
+</div>
+
+   
+<div class="mySlides fade">
+      <img src="../imgs/Untitled_Artwork 10.png"  class="sliderImg" id="spinalCord">
+</div>
+
+<div class="mySlides fade">
+      <img src="../imgs/Untitled_Artwork 9.png"  class="sliderImg">
+</div>
+   <!-- end of slide content -->
+
+ </div>
+<!-- END of slider about the pump -->
+
+  <p> It is powered by energy from the cell.
+This pump <b>swip-swaps 3 sodium from the inside of the cell</b> to the outside and <b>two potassium from the outside</b> to the inside. 
+As a result the concentration gradient is maintained. The gradient drives the diffusion that causes a potential difference across the membrane.</p>
+
+<!-- START of next and previous buttons -->
+<div class="nextPrevContainer">
+
+  <div class="PControlContainer">
+<a href="cellMembrane.html" class="pLessonIcon"> <i class="fa-solid fa-chevron-left"></i></a>
+  <a href="cellMembrane.html" class="prevText">Previous Lesson</a> 
+  </div>
+
+</div>
+  <!-- END of next and previous buttons -->
+  
+<!-- START of sources accordian -->
+    
+<div class="sourcesContainer">
+
+
+
+    <!-- show sources button -->
+<button data-text-swap="Hide Sources"  class="collapsible">Show Sources <i class="fa-solid fa-plus"></i></button>
+
+  
+  <!-- further classifications and their content -->
+  <div class="content">
+
+    <button class="accordion">Balance</button>
+      <div class="panel">
+
+      <a href="
+https://youtube.com/watch?v=OZG8M_ldA1M" target="_blank" class="sourcesLink"><b>Crash Course, The Nervous System, Part 2:</b> Discusses electrochemical gradients</a>
+
+              <a href="
+https://www.biologyonline.com/dictionary/concentration-gradient" target="_blank" class="sourcesLink"><b>Biology Online:</b> Definition of a chemical and an electrical gradient</a>
+       
+      </div>
+
+    <button class="accordion">Ions in the Membrane</button>
+      <div class="panel">
+
+      <a href="
+https://neuroscientificallychallenged.com/glossary/membrane-potential" target="_blank" class="sourcesLink"><b>Neuroscientifically Challenged:</b> Explains the distribution of ions across a membrane of a neuron at rest</a>
+
+              <a href="
+https://youtube.com/watch?v=rcacx09VODc" target="_blank" class="sourcesLink"><b>Prof. Lisa Johnson-DiMarco:</b> This video covers how a resting membrane potential is maintained</a>
+        
+      </div>
+
+        <button class="accordion">Channel Proteins</button>
+      <div class="panel">
+
+        <a href="
+https://www.bbc.co.uk/bitesize/guides/zqdhjty/revision/2#:~:text=Diffusion%20is%20the%20net%20movement,is%20called%20the%20concentration%20gradient%20." target="_blank" class="sourcesLink"><b>BBC Bitesize:</b> "Diffusion is the net movement of molecules from an area where they are at a higher concentration to areas where they are at a lower concentration."</a>
+      <a href="
+https://youtube.com/watch?v=rcacx09VODc" target="_blank" class="sourcesLink"><b>Prof. Lisa Johnson-DiMarco:</b> This video covers how a resting membrane potential is maintained</a>
+        
+      <a href="
+https://www.cusabio.com/c-20853.html" target="_blank" class="sourcesLink"><b>Cusabio:</b> Definition of a transmembrane protein</a>
+        
+      </div>
+
+        <button class="accordion">Postassium Channels</button>
+      <div class="panel">
+
+      <a href="
+https://youtube.com/watch?v=rcacx09VODc" target="_blank" class="sourcesLink"><b>Prof. Lisa Johnson-DiMarco:</b> This video covers how a resting membrane potential is maintained</a>
+        
+      </div>
+    
+    <button class="accordion">Sodium channels</button>
+      <div class="panel">
+
+   <a href="
+https://courses.lumenlearning.com/boundless-biology/chapter/how-neurons-communicate/" target="_blank" class="sourcesLink"><b>Boundless Biology:</b> "Neurons have far more potassium leakage channels than sodium leakage channels. Therefore, potassium diffuses out of the cell at a much faster rate than sodium leaks in."</a>
+    
+        
+      <a href="
+https://youtube.com/watch?v=rcacx09VODc" target="_blank" class="sourcesLink"><b>Prof. Lisa Johnson-DiMarco:</b> This video covers how a resting membrane potential is maintained</a>
+      </div>
+
+    <button class="accordion">Sodium-Potassium Pump
+</button>
+      <div class="panel">
+      <a href="
+https://youtube.com/watch?v=rcacx09VODc" target="_blank" class="sourcesLink"><b>Prof. Lisa Johnson-DiMarco:</b> This video covers how a resting membrane potential is maintained</a>
+
+      <a href="
+https://neuroscientificallychallenged.com/glossary/membrane-potential" target="_blank" class="sourcesLink"><b>Neuroscientifically Challenged:</b> Explains the sodium-potassium pump's role in maintaining a membrane potential of -70mv</a>
+      </div>
+
+    </div>
+</div>
+    
+    <!-- END of sources accordian -->
+  
+</div>
+  <script src="../script.js"></script>
+
+
+
+  </div>
+
+  <script src="../script.js"></script>
+  <script type="text/javascript">
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" activeSlide", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " activeSlide";
+}
+  </script>
+</body>
+</html>

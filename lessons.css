@@ -1,0 +1,268 @@
+
+
+/* big container for all the lessons */
+div.lessonSelection {
+  margin: 11%;
+    width: 78%;
+    text-align: center;
+   /*  margin: 2vw; */
+    margin-top: 4%;
+    /* padding-top: 5%; */
+    flex-flow:row wrap;
+    display: flex;
+   justify-content: center;
+  }
+
+/* individual containers for single lessons */
+div.singleLesson {
+  width: 17vw;
+  height: auto;
+  flex-flow:row wrap;
+  margin: 4%;
+  text-align: center;
+  padding:0%;
+  justify-content: center;
+}
+
+/* makes the image for the lessons circular */
+.roundImg {
+  /* object-fit:cover; */
+  border-radius: 50%;
+  height: 17vw;
+  width: 17vw;
+  background-color:pink;
+  display:block;
+  
+}
+
+
+
+
+.frontLogo {
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.cellMembrane{
+ background-image: url("imgs/Untitled_Artwork 10.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+
+ 
+/* START of basic styling. */
+
+body {
+     background: linear-gradient(to right, #c92a42, #c93232, #c94a22, #c94e28,#c94028, #c72e3b,#c92c46,#d9364f, #d43b47);
+    background-color: #c94028;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    overflow-y: scroll;
+    overflow-block: initial;
+    color:#332820;
+}
+
+
+/* acts as a background */
+.canvas{
+    background-color: #f0ded1;
+    margin: 0%;
+    padding-bottom: 10%;
+}
+
+
+h1{
+    font-family: forma-djr-text;
+    font-style: normal;
+    font-size: 450%;
+    margin-top: 7.5%;
+    margin-bottom: 5%;
+    /* margin-left: 11%; */
+  margin-left: 18%;
+    margin-right: 10%;
+    font-weight: 900;
+}
+
+h2{
+    font-family: soleil;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 170%;
+ 
+    margin-bottom: 3%;
+  position: relative;
+  display:block;
+   
+}
+/* 
+h3 {
+    font-family: forma-djr-text;
+    font-style: normal;
+    font-weight: medium;
+    font-size: 275%;
+    margin-top: 4.5%;
+    margin-bottom: 0%;
+    margin-left: 18.4%;
+}
+
+h4{
+    font-family: forma-djr-text;
+    font-style: normal;
+    font-weight: medium;
+    font-size: 160%;
+    margin-top: 4.5%;
+    margin-bottom: 0%;
+    margin-left: 18.5%;
+}
+
+h5{
+    font-family: forma-djr-text;
+    font-style: normal;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 220%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 11.4%;
+}
+
+p{
+    font-size: 160%;
+    margin-left: 11.3%;
+    margin-right: 18.5%;
+  font-family:soleil;
+  font-style: normal;
+} */
+
+li{
+    font-size: 150%;
+    margin-left: 16.5%;
+    margin-right: 18.5%;
+}
+
+/* {
+  font-size: 160%;
+    margin-left: 11.3%;
+    margin-right: 18.5%;
+  font-family:soleil;
+  font-style: normal;
+  margin-top: 3.75%;
+} */
+
+a:link, a:visited, a:hover, a:active {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* main font styling ends here */
+
+
+/* nav bar background.  #c94922, #c94c16*/
+.topnav {
+   background: linear-gradient(to right, #c92a42, #c93232, #c94a22, #c94e28,#c94028, #c72e3b,#c92c46,#d9364f, #d43b47);
+    padding-top: 2.25%;
+    padding-bottom: 2.25%; 
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: left;
+}
+
+/* nav bar fonts */
+.topnav a {
+    font-size: 172%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f0ded1;
+    display: inline;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family:soleil;
+    font-weight:800;
+}
+
+/* moves lessons and quizzes to the left in the nav bar */
+#lessons, #aboutUs {
+    float: right;
+}
+
+
+
+/* START OF MEDIA STYLING */
+
+
+@media (max-width: 1200px) {
+
+ body {
+    max-width: 1200px;
+    margin: 0%;
+  }
+
+  div.lessonSelection {
+    text-align: center;
+    margin: 3vw;
+    margin-top: 4%;
+    flex-flow:row wrap;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  div.singleLesson {
+    width: 20%;
+    height: auto;
+    flex-flow:row wrap;
+    margin: 1%;
+    text-align: center;
+    padding:3%;
+  }
+
+  .roundImg {
+    object-fit:cover;
+    border-radius: 50%;
+    height: 20vw;
+    width: 20vw;
+  }
+}
+
+
+
+@media (max-width: 850px) {
+
+ body {
+  max-width: 850px;
+  margin: 0%;
+  }
+
+  div.lessonSelection {
+    text-align: center;
+    margin: 1vw;
+    margin-top: 4%;
+    flex-flow:row wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  div.singleLesson {
+  width: 32%;
+  height: auto;
+  flex-flow:row wrap;
+  margin: 4%;
+  text-align: center;
+  padding:3%;
+}
+
+.roundImg {
+  object-fit:cover;
+  border-radius: 50%;
+  height: 32vw;
+  width: 32vw;
+}
+
+/* END of media styling */
+ 

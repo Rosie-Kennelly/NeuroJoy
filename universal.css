@@ -1,0 +1,459 @@
+/* START of styling for next and pervious buttons */
+/* Next & previous buttons */
+.pLessonIcon, .nLessonIcon {
+    font-size:300%;
+    color: #85574d;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+   position:relative;
+    flex-flow:row wrap;
+    display: block;
+  margin:auto;
+}
+
+.pLessonIcon{
+  color: #b57d57;
+}
+
+/* Position the "next button" to the right */
+/* .nLesson {
+    right: 0;
+} */
+
+/* On hover next/prev button will change colour*/
+.pLessonIcon:hover, .nLessonIcon:hover {
+    color: #85574d;
+}
+
+.nextPrevContainer{
+  text-align: center;
+    width: 76vw;
+   margin:11%;
+    margin-top: 4%;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+}
+
+a.prevText, a.nextText {
+  display: flex;
+   color: #85574d;
+  text-decoration: none;
+  font-style: normal;
+    position:relative;
+    flex-flow:row wrap;
+    display: block;
+margin:10%;
+  margin-top:0%;
+  margin-bottom:0%;
+padding:10%;
+font-size: 2.5vw;
+  font-family: forma-djr-text;
+  font-weight: 700;}
+
+a.prevText{
+  color: #b57d57;
+}
+/* e6c7b1 */
+  .PControlContainer, .NControlContainer  {
+    background-color: #dbb79e;
+    width: 90%;
+   margin:7%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 10%;
+    flex-wrap: nowrap;
+    display: flex;
+    border-radius: 2em;
+    box-shadow: #e8cfbe 0px 48px 100px 0px;
+    cursor: pointer;
+  }
+
+.PControlContainer {
+  background-color: #e6cab5;
+  color: #e6c7b1;
+}
+/*  #f0c9c0 */
+
+/* .nextLesson {
+  background-color: #04AA6D;
+  color: white;
+  display: flex;
+  padding: 8px 16px;
+
+   color: #332820;
+  text-decoration: none;
+  font-size: 120%;
+  font-family:soleil;
+  font-style: normal;
+   margin: auto;
+    position:relative;
+    flex-flow:row wrap;
+    display: block;
+  
+  justify-self: flex end;
+} */
+
+/* END of styling for next and pervious buttons */
+
+
+/* START of styling for the sources accordian */
+
+
+
+/* styling for main 'show sources' button */
+.collapsible {
+  background-color: #e6c7b1;
+  cursor: pointer;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 2.2%;
+  padding-top: 2.2%;
+  border: none;
+  text-align: left;
+  width: 76vw;
+  margin: auto;
+  margin-top: 5.6%;
+  position:relative;
+  flex-flow:row wrap;
+  display: block;
+  box-shadow: #e8cfbe 0px 48px 100px 0px;
+  font-size: 2.5vw;
+  font-family: forma-djr-text;
+  font-weight: 700;
+  border-radius: 0.7em;
+  color: #b57d57;
+  transition: background-color 0.6s ease;
+  transition: color 0.6s ease;
+  
+  /* different styling choice: background-color: #e8cfbe;
+  border: 3px solid #b57d57; */
+}
+
+
+/* changes 'show sources' button color on hover */
+.collapsible:hover {
+  background-color: #e0bea4;
+  color:#8a5938;
+  transition: color 0.6s ease;
+}
+
+/* you don't really see this */
+.content {
+  display: none;
+  overflow: hidden;
+  background-color: #e6c7b1;
+  width: 76vw;
+  position:relative;
+  margin: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 0em 0em 1em 1em;
+}
+/* d17145 */
+.accordion {
+  background-color: #e6c7b1;
+  color: #8a5938;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  width: 76vw;
+  margin: auto;
+  position:relative;
+  flex-flow:row wrap;
+  display: block;
+  font-family: forma-djr-text;
+  font-weight: 700;
+  font-size:2vw;
+  padding-left:12%;
+  padding-right: 8%;
+  padding-top:2.6%;
+  padding-bottom:2.6%;
+}
+
+.accordion:hover  {
+  background-color: #e0bea4; 
+}
+
+
+.selected {
+  background-color: #e0bea4;
+  border-radius: 1em 1em 0em 0em;
+  color:#784522;
+}
+
+/* this is where the sources and their links are e6c7b1 */
+.panel {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  padding-left: 0.8%;
+  padding-right: 0.8%;
+  display: none;
+  background-color: #ebd0be; 
+  overflow: hidden;
+}
+
+/* this styles the plus icon on the 'show sources' button */
+.fa-solid, .fa-plus {
+  float:right;
+  font-weight:1000;
+}
+
+.collapsible:after {
+  color:#e3bda1;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion:after {
+font-family: 'Font Awesome\ 5 Free';
+  content: "\2b"; /* Unicode character for "plus" sign (+) */;
+  font-size: 2.4vw;
+  color:#8a5938;
+  float: right;
+  margin-left: 5px;
+  font-weight:1000;
+}
+
+.selected:after {
+  font-family: 'Font Awesome\ 5 Free';
+content: "\f068"; /* Unicode character for "plus" sign (+) */;
+color:#784522;
+}
+
+.sourcesContainer{
+margin: 10%;
+}
+
+.sourcesLink{
+  color: #332820;
+  text-decoration: none;
+  font-size: 120%;
+    margin-left: 11.3%;
+    margin-right: 18.5%;
+    margin-bottom: 3%;
+  font-family:soleil;
+  font-style: normal;
+  display:block;
+}
+
+.sourcesLink:hover{
+  text-decoration:underline 1px;
+  text-underline-position: under;
+  /* this makes it work for safari */
+   -webkit-text-decoration: underline;
+}
+
+/* END of styling for the sources accordian */
+
+/* START of basic styling. */
+
+body {
+     background: linear-gradient(to right, #c92a42, #c93232, #c94a22, #c94e28,#c94028, #c72e3b,#c92c46,#d9364f, #d43b47);
+    background-color: #c94028;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    overflow-y: scroll;
+    overflow-block: initial;
+    color:#332820;
+}
+
+
+/* acts as a background */
+.canvas{
+    background-color: #f0ded1;
+    margin: 0%;
+    padding-bottom: 10%;
+  overflow: hidden;
+}
+
+
+/* main font styling starts here */
+h1{
+    font-family: forma-djr-text;
+    font-style: normal;
+    font-size: 720%;
+    margin-top: 7.5%;
+    margin-bottom: 0%;
+    margin-left: 11%;
+    margin-right: 10%;
+    font-weight: 900;
+}
+
+/* h2{
+    font-family: forma-djr-text;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 350%;
+    margin-top: 8%;
+    margin-bottom: 3%;
+    margin-left: 11.5%;
+    margin-right: 10%;
+} */
+
+h2{
+    font-family: forma-djr-text;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 260%;
+    margin-top: 8%;
+    margin-bottom: 3%;
+    margin-left: 11.5%;
+    margin-right: 10%;
+}
+
+h3 {
+    font-family: forma-djr-text;
+    font-style: normal;
+    font-weight: medium;
+    font-size: 275%;
+    margin-top: 4.5%;
+    margin-bottom: 0%;
+    margin-left: 18.4%;
+}
+
+h4{
+    font-family: forma-djr-text;
+    font-style: normal;
+    font-weight: medium;
+    font-size: 160%;
+    margin-top: 4.5%;
+    margin-bottom: 0%;
+    margin-left: 18.5%;
+}
+
+h5{
+    font-family: forma-djr-text;
+    font-style: normal;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 220%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 11.4%;
+}
+
+p{
+    font-size: 160%;
+    margin-left: 11.3%;
+    margin-right: 18.5%;
+  font-family:soleil;
+  font-style: normal;
+}
+
+li{
+    font-size: 150%;
+    margin-left: 16.5%;
+    margin-right: 18.5%;
+}
+
+/* main font styling ends here */
+
+
+/* nav bar background.  #c94922, #c94c16*/
+.topnav {
+   background: linear-gradient(to right, #c92a42, #c93232, #c94a22, #c94e28,#c94028, #c72e3b,#c92c46,#d9364f, #d43b47);
+    padding-top: 2.25%;
+    padding-bottom: 2.25%; 
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: left;
+}
+
+/* nav bar fonts */
+.topnav a {
+    font-size: 172%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f0ded1;
+    display: inline;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family:soleil;
+    font-weight:800;
+}
+
+/* moves lessons and quizzes to the left in the nav bar */
+#lessons, #aboutUs {
+    float: right;
+}
+
+
+/* MEDIA STYLING */
+
+
+@media (max-width: 1200px) {
+
+ body {
+    max-width: 1200px;
+    margin: 0%;
+  }
+
+  div.lessonSelection {
+    text-align: center;
+    margin: 3vw;
+    margin-top: 4%;
+    flex-flow:row wrap;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  div.singleLesson {
+    width: 20%;
+    height: auto;
+    flex-flow:row wrap;
+    margin: 1%;
+    text-align: center;
+    padding:3%;
+  }
+
+  .roundImg {
+    object-fit:cover;
+    border-radius: 50%;
+    height: 20vw;
+    width: 20vw;
+  }
+}
+
+
+
+@media (max-width: 425px) {
+
+
+  h1{
+    font-size: 13vw !important;
+  }
+
+  h2{
+    font-size: 9vw !important;
+    margin-top: 20%;
+  }
+
+  a.prevText, a.nextText{
+    display:none;
+  }
+
+
+  .collapsible {
+    height: 10%;
+    font-size: 5vw;
+  }
+
+  .accordion {
+     height: 10%;
+    font-size: 5vw;
+
+  }
+}
+
+
+@media (max-width: 778px) {
+
+     h1{font-size: 9vw !important;}
+}
