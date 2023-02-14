@@ -58,7 +58,7 @@ h5{
 } */
 
 .highV{
- background-image: linear-gradient(to top, transparent, #332820 100%), url("../imgs/Untitled_Artwork 23.png");
+ background-image: linear-gradient(to top, transparent, #332820 100%), url("./imgs/Untitled_Artwork 23.png");
   background-size: cover;
 }
 

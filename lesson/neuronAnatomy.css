@@ -192,43 +192,43 @@
 }
 
 .cellBody{
- background-image: linear-gradient(to top, transparent, #332820 100%), url("../imgs/Untitled_Artwork 43.png");
+ background-image: linear-gradient(to top, transparent, #332820 100%), url("./imgs/Untitled_Artwork 43.png");
   background-size: 90% 85%;
   background-position:center top;
 }
 
 .nucleus{
- background-image: linear-gradient(to top, transparent, #332820 100%), url("../imgs/Untitled_Artwork 42.png");
+ background-image: linear-gradient(to top, transparent, #332820 100%), url("./imgs/Untitled_Artwork 42.png");
   background-size: cover;
 }
 
 .cellMembrane{
- background-image: linear-gradient(to top, transparent, #332820 100%), url("../imgs/Untitled_Artwork 37.png");
+ background-image: linear-gradient(to top, transparent, #332820 100%), url("./imgs/Untitled_Artwork 37.png");
   background-size: cover;
 }
 
 .dendrites{
- background-image: linear-gradient(to top, transparent, #332820 100%), url("../imgs/Untitled_Artwork 38.png");
+ background-image: linear-gradient(to top, transparent, #332820 100%), url("./imgs/Untitled_Artwork 38.png");
   background-size: cover;
 }
 
 .axonHillock{
- background-image: linear-gradient(to top, transparent, #332820 100%), url("../imgs/Untitled_Artwork 39.png");
+ background-image: linear-gradient(to top, transparent, #332820 100%), url("./imgs/Untitled_Artwork 39.png");
   background-size: cover;
 }
 
 .axon{
- background-image: linear-gradient(to top, transparent, #332820 100%), url("../imgs/Untitled_Artwork 45.png");
+ background-image: linear-gradient(to top, transparent, #332820 100%), url("./imgs/Untitled_Artwork 45.png");
   background-size: cover;
 }
 
 .schwannCells{
-background-image: linear-gradient(to top, transparent, #332820 95%), url("../imgs/Untitled_Artwork 35.png");
+background-image: linear-gradient(to top, transparent, #332820 95%), url("./imgs/Untitled_Artwork 35.png");
       background-size: cover;
 }
 
 .myelinSheath{
-background-image: linear-gradient(to top, transparent, #332820 95%), url("../imgs/Untitled_Artwork 44.png");
+background-image: linear-gradient(to top, transparent, #332820 95%), url("./imgs/Untitled_Artwork 44.png");
       background-size: cover;
    background-size: 95% 85%;
   background-position:center top;
@@ -236,7 +236,7 @@ background-image: linear-gradient(to top, transparent, #332820 95%), url("../img
 
 
 .axonTerminals{
-background-image: linear-gradient(to top, transparent, #332820 95%), url("../imgs/Untitled_Artwork 36 copy.png");
+background-image: linear-gradient(to top, transparent, #332820 95%), url("./imgs/Untitled_Artwork 36 copy.png");
       background-size: cover;
   background-size: 95% 80%;
   background-position:center top;
